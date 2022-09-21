@@ -26,6 +26,12 @@ public class HomePage extends TestBase {
 		@FindBy(xpath = "//*[@id=\"topnav\"]/tbody/tr[1]/td[2]/div/a")
 	    WebElement switchToActiPlans;
 		
+		@FindBy(xpath = "//*[@id=\"topnav\"]/tbody/tr[2]/td[2]/div[2]/a")
+	    WebElement switchToViewTimeTrack;
+		
+		@FindBy(xpath = "//*[@id=\"topnav\"]/tbody/tr[2]/td[2]/div[4]/a")
+	    WebElement switchToApproveTimeTrack;
+		
 	
 		
 		//initialization
@@ -68,5 +74,17 @@ public class HomePage extends TestBase {
             switchToActiPlans.click();
             return new ActiPlanPage();
         }
+        
+        public ViewTimeTrackPage clickOnSwitchToViewTimeTrack () {
+        	switchToViewTimeTrack.click();
+            return new ViewTimeTrackPage();
+        }
+        
+        public ApproveTimeTrackPage clickOnSwitchToApproveTimeTrack () {
+        	switchToApproveTimeTrack.click();
+            return new ApproveTimeTrackPage();
+        }
+        
+        
 	
 }
