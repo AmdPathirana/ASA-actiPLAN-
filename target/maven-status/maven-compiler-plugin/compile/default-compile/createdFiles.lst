@@ -3,6 +3,7 @@ com/actitime/qa/extentreportlistener/ExtentReporterNG.class
 com/actitime/qa/base/TestBase.class
 com/actitime/qa/pages/LoginPage.class
 com/actitime/qa/pages/TasksPage.class
+com/actitime/qa/pages/ActiPlanPage.class
 com/actitime/qa/pages/HomePage.class
 com/actitime/qa/pages/ReportsPage.class
 com/actitime/qa/util/WebEventListener.class

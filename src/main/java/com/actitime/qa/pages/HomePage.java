@@ -23,6 +23,9 @@ public class HomePage extends TestBase {
 		@FindBy(xpath = "//div[@id='logo_aT']")
 		WebElement actitimeLogo;
 		
+		@FindBy(xpath = "//*[@id=\"topnav\"]/tbody/tr[1]/td[2]/div/a")
+	    WebElement switchToActiPlans;
+		
 	
 		
 		//initialization
@@ -60,5 +63,10 @@ public class HomePage extends TestBase {
 	         return new ReportsPage();
 			
 		}
+        
+        public ActiPlanPage clickOnSwitchToActiPlans() {
+            switchToActiPlans.click();
+            return new ActiPlanPage();
+        }
 	
 }
