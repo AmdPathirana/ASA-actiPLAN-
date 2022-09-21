@@ -32,7 +32,7 @@ public class TestUtil extends TestBase {
 	}
 	
 	
-	public static String TESTDATA_SHEET_PATH = "/Users/amodpathirana/Downloads/PageObjectModel_Demo-main/src/main/java/com/actitime/qa/testdata/actitimeTestData.xlsx";
+	public static String TESTDATA_SHEET_PATH = System.getProperty("user.dir") + "/src/main/java/com/actitime/qa/testdata/actitimeTestData.xlsx";
 
 	static Workbook book;
 	static Sheet sheet;

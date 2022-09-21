@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="TestSuite" time="23.826" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="TestSuite" time="24.235" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="16.0.1+9-24"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-16.0.1.jdk/Contents/Home/lib"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/amodpathirana/Downloads/PageObjectModel_Demo-main"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/amodpathirana/UCSC/4th YR/1_sem/IS4102/ASQA-actiPLAN-/PageObjectModel_Demo-main"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -13,7 +13,7 @@
     <property name="user.country" value="LK"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/amodpathirana/Downloads/PageObjectModel_Demo-main"/>
+    <property name="user.dir" value="/Users/amodpathirana/UCSC/4th YR/1_sem/IS4102/ASQA-actiPLAN-/PageObjectModel_Demo-main"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="16.0.1+9-24"/>
     <property name="os.arch" value="x86_64"/>
@@ -22,7 +22,7 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/amodpathirana/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf12605075993720651408.tmp"/>
+    <property name="classworlds.conf" value="/Users/amodpathirana/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf17455168982520392942.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/amodpathirana/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="jdk.debug" value="release"/>
@@ -46,7 +46,7 @@
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.version" value="16.0.1"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="/Users/amodpathirana/Downloads/PageObjectModel_Demo-main/EMBEDDED"/>
+    <property name="maven.home" value="/Users/amodpathirana/UCSC/4th YR/1_sem/IS4102/ASQA-actiPLAN-/PageObjectModel_Demo-main/EMBEDDED"/>
     <property name="file.separator" value="/"/>
     <property name="java.version.date" value="2021-04-20"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
@@ -55,9 +55,9 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="loginPageLogoTest" time="0.331"/>
-  <testcase classname="com.actitime.qa.testcases.HomePageTest" name="homePageLogoTest" time="7.36"/>
-  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="LoginTest" time="1.088"/>
-  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="LoginTest" time="1.53"/>
-  <testcase classname="com.actitime.qa.testcases.HomePageTest" name="homePageTaskLinkTest" time="13.517"/>
+  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="loginPageLogoTest" time="0.336"/>
+  <testcase classname="com.actitime.qa.testcases.HomePageTest" name="homePageLogoTest" time="8.311"/>
+  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="LoginTest" time="1.07"/>
+  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="LoginTest" time="1.099"/>
+  <testcase classname="com.actitime.qa.testcases.HomePageTest" name="homePageTaskLinkTest" time="13.419"/>
 </testsuite>

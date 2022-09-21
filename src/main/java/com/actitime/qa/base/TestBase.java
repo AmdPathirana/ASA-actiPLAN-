@@ -41,11 +41,11 @@ public class TestBase {
 String browserName = properties.getProperty("browser");
 		
 		if(browserName.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver", "//Users//amodpathirana//Downloads//chromedriver");	
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+ "chromedriver");	
 			driver = new ChromeDriver(); 
 		}
 		else if(browserName.equals("Firefox")){
-			//System.setProperty("webdriver.gecko.driver", "//Users//methuliakithma//Documents//Trainings//UCSC//");	
+			
 			driver = new FirefoxDriver(); 
 		}
 		else if (browserName.equals("IE")){
