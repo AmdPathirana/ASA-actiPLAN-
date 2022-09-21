@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.actitime.qa.testcases.ViewUsersTest">
+      <class name="com.actitime.qa.testcases.ViewLeaves">
         <methods>
-          <include name="viewUsersTableTest"/>
           <include name="seup"/>
-          <include name="tearDown"/>
+          <include name="rejectLeaveRequest"/>
         </methods>
-      </class> <!-- com.actitime.qa.testcases.ViewUsersTest -->
+      </class> <!-- com.actitime.qa.testcases.ViewLeaves -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

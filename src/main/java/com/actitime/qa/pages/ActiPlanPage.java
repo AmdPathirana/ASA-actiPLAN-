@@ -19,6 +19,9 @@ public class ActiPlanPage extends TestBase {
 	@FindBy(xpath = "//*[@id=\"topnav\"]/tbody/tr/td[6]/a")
 	WebElement usersLink;
 	
+	@FindBy(xpath = "//*[@id=\"topnav\"]/tbody/tr/td[4]/a")
+	WebElement leaveMgtLink;
+	
 		
 		//initialization
 		
@@ -42,6 +45,12 @@ public class ActiPlanPage extends TestBase {
 			
 			usersLink.click();
 			return new UsersPage();
+			
+		}
+		
+		public LeaveManagmentPage clickOnLeaveMgtLink() {
+			leaveMgtLink.click();
+			return new LeaveManagmentPage();
 			
 		}
 		

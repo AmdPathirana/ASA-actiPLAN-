@@ -1,3 +1,4 @@
 com/actitime/qa/testcases/ViewUsersTest.class
-com/actitime/qa/testcases/LogonPageTest.class
 com/actitime/qa/testcases/HomePageTest.class
+com/actitime/qa/testcases/ViewLeaves.class
+com/actitime/qa/testcases/LogonPageTest.class
