@@ -16,6 +16,7 @@ public class LogonPageTest extends TestBase{
 	LoginPage loginPage;
 	HomePage homePage;
 	String sheetName = "Users";
+	String sheetName2= "InvalidUsers";
 	TestUtil testUtil;
 	
 	
@@ -35,34 +36,45 @@ public class LogonPageTest extends TestBase{
 	
 	@Test(priority = 1)
 	public void loginPageLogoTest() {
-		
-	boolean flag= loginPage.validateActiTimeLogo();
-	Assert.assertTrue(flag);
-		
+		boolean flag= loginPage.validateActiTimeLogo();
+		Assert.assertTrue(flag);	
 	}
 	
 	
 	@DataProvider
-	
 	public Object[][] getactiTimeTestData() {
-		Object data[][]=testUtil.getTestData(sheetName);
-		
+		Object data[][]=TestUtil.getTestData(sheetName);
 		return data;
-		
-		
-		
 	}
+	
+	
 	@Test(priority = 2,dataProvider="getactiTimeTestData")
-	public void LoginTest(String userName, String password) {
-		
-		
+	public void LoginTest(String userName, String password) throws InterruptedException {
 		homePage = loginPage.loging(userName, password);
+		Thread.sleep(2000);
+		homePage.validateActiTimeLogo();
+		homePage.verifyHomePageTitle();
 	}
+	
+	@DataProvider
+	public Object[][] getactiTimeTestInvalidData() {
+		Object data[][]=TestUtil.getTestData(sheetName2);
+		return data;
+	}
+	
+	
+	@Test(priority = 2,dataProvider="getactiTimeTestInvalidData")
+	public void LoginTestInvalid(String userName, String password) {
+		homePage = loginPage.loging(userName, password);
+		loginPage.invalidLogin();
+	}
+	
+	
+	
 	
 	
 	@AfterMethod
-	public void tearDown() {
-		
+	public void tearDown() {	
 		driver.quit();
 	}
 }

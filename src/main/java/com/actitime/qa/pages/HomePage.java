@@ -3,6 +3,7 @@ package com.actitime.qa.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import com.actitime.qa.base.TestBase;
 
@@ -38,6 +39,11 @@ public class HomePage extends TestBase {
 			return actitimeLogo.isDisplayed();
 		}
 		
+		 public void verifyHomePageTitle() {
+		        String expTitle = "actiTIME - Enter Time-Track";
+		        String actTitle = driver.getTitle();
+		        Assert.assertEquals(actTitle, expTitle);
+		 }
 		
 		
 		public TasksPage clickOnTaskLink() {

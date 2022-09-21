@@ -21,8 +21,6 @@ public class LoginPage extends TestBase {
 	WebElement userName;
 	
 	
-	
-	
 	@FindBy(xpath = "//input[@type='password'and @name='pwd']")
 	WebElement passWord;
 	
@@ -39,14 +37,13 @@ public class LoginPage extends TestBase {
 	@FindBy(xpath = "//div[@class='atLogoImg']")
 	WebElement actiTimeLogo;
 	
+	@FindBy(xpath = "//*[@id=\"ErrorsTable\"]/tbody/tr/td[2]/table/tbody/tr/td/span")
+    WebElement error;
 	
 	//initialization
 	
 	public LoginPage() {
-		
 		PageFactory.initElements(driver, this);
-		
-		
 		
 	}
 	
@@ -58,11 +55,16 @@ public class LoginPage extends TestBase {
 	}
 	
 	public HomePage loging(String uName, String pword) {
-		
 		userName.sendKeys(uName);
 		passWord.sendKeys(pword);
 		loginButton.click();
 		return new HomePage();
 		
 	}
+	
+	//error message 
+	public Boolean invalidLogin() {
+        return error.isDisplayed();
+    }
+
 }
