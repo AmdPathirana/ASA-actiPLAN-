@@ -63,7 +63,7 @@ public class LeaveTimeRequestPage extends TestBase  {
 		List<WebElement> checkboxes = driver.findElements(By.className("applicableLabel"));
 		checkboxes.get(0).click();
 		rejectBtn.click();
-		rejectReason.sendKeys("automated Run");
+		rejectReason.sendKeys("invalid request");
         rejectSubmitBtn.click();
 		Thread.sleep(1000);
         Assert.assertEquals(status.getText(),"Rejected");

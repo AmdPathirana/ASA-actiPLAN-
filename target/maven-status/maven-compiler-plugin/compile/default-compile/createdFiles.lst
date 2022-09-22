@@ -1,6 +1,8 @@
 com/actitime/qa/pages/TasksPage.class
 com/actitime/qa/pages/HomePage.class
 com/actitime/qa/pages/ReportsPage.class
+com/actitime/qa/pages/ViewTimeTrackPage.class
+com/actitime/qa/pages/ApproveTimeTrackPage.class
 com/actitime/qa/pages/UsersPage.class
 com/actitime/qa/pages/LeaveTimeRequestPage.class
 com/actitime/qa/extentreportlistener/ExtentReporterNG.class
