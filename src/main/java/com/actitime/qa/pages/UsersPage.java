@@ -60,8 +60,9 @@ public class UsersPage extends TestBase  {
 				
 	}
 	
-	public void viewInformation() {
+	public void viewInformation() throws InterruptedException {
 		userName.click();
+		Thread.sleep(1000);
 		Assert.assertEquals(accountInfoHeading.getText(),"Account Information");
 	}
 	

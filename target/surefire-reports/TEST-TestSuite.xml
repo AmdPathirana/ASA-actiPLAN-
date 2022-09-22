@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="19" failures="2" name="TestSuite" time="393.887" errors="0" skipped="5">
+<testsuite tests="15" failures="1" name="TestSuite" time="117.361" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="16.0.1+9-24"/>
@@ -22,7 +22,7 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/amodpathirana/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf15305057390431865017.tmp"/>
+    <property name="classworlds.conf" value="/Users/amodpathirana/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf15455690173826906702.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/amodpathirana/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="jdk.debug" value="release"/>
@@ -39,7 +39,7 @@
     <property name="java.class.path" value="/Users/amodpathirana/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_1.16.0.20210129-0849/jars/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="16"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-16.0.1.jdk/Contents/Home"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -55,50 +55,56 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="com.actitime.qa.testcases.ViewUsersTest" name="viewUsersTable" time="0.898"/>
-  <testcase classname="com.actitime.qa.testcases.TimeTrackTest" name="viewTimeTrackTest" time="24.254"/>
-  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="loginPageLogoTest" time="1.205"/>
-  <testcase classname="com.actitime.qa.testcases.HomePageTest" name="homePageLogoTest" time="6.784"/>
-  <testcase classname="com.actitime.qa.testcases.ViewUsersTest" name="changeStatus" time="2.786">
-    <failure message="element click intercepted: Element &lt;span class=&quot;accountTab-accountStateText-span&quot;&gt;...&lt;/span&gt; is not clickable at point (1172, 317). Other element would receive the click: &lt;div class=&quot;loadingMoire welcomeScreenLoadingMoire&quot; style=&quot;display: flex;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=105.0.5195.125)
+  <testcase classname="com.actitime.qa.testcases.ViewUsersTest" name="viewUsersTable" time="0.112"/>
+  <testcase classname="com.actitime.qa.testcases.TimeTrackTest" name="viewTimeTrackTest" time="25.975"/>
+  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="loginPageLogoTest" time="0.301"/>
+  <testcase classname="com.actitime.qa.testcases.HomePageTest" name="homePageLogoTest" time="7.554"/>
+  <testcase classname="com.actitime.qa.testcases.ViewUsersTest" name="changeStatus" time="2.14"/>
+  <testcase classname="com.actitime.qa.testcases.ViewUsersTest" name="changeApprovedAdmin" time="1.752"/>
+  <testcase classname="com.actitime.qa.testcases.ViewUsersTest" name="viewAccountInfo" time="1.586"/>
+  <testcase classname="com.actitime.qa.testcases.TimeTrackTest" name="approveTimeTrack" time="13.289"/>
+  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="LoginTestInvalid" time="3.849"/>
+  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="LoginTestInvalid" time="5.491"/>
+  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="LoginTestInvalid" time="4.136"/>
+  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="LoginTest" time="10.154"/>
+  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="LoginTest" time="10.236"/>
+  <testcase classname="com.actitime.qa.testcases.HomePageTest" name="homePageTaskLinkTest" time="13.804"/>
+  <testcase classname="com.actitime.qa.testcases.TimeTrackTest" name="rejectTimeTrack" time="16.982">
+    <failure message="unexpected alert open: {Alert text : This operation was not applied to some entries because their current status coincides with the operation status.}
+  (Session info: chrome=105.0.5195.125): This operation was not applied to some entries because their current status coincides with the operation status.
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2380:ffdb:4892:eb9c:e658:ab07%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:65097}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 299fdb7ae6821214d07bf4c09fbeb55e" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;accountTab-accountStateText-span&quot;&gt;...&lt;/span&gt; is not clickable at point (1172, 317). Other element would receive the click: &lt;div class=&quot;loadingMoire welcomeScreenLoadingMoire&quot; style=&quot;display: flex;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=105.0.5195.125)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:55017}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 71dd4e18c38f466371d3066fa3f5f494
+*** Element info: {Using=xpath, value=//*[@id=&quot;approveTTTable&quot;]/tbody[2]/tr[1]/td[6]/a}" type="org.openqa.selenium.UnhandledAlertException">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : This operation was not applied to some entries because their current status coincides with the operation status.}
+  (Session info: chrome=105.0.5195.125): This operation was not applied to some entries because their current status coincides with the operation status.
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2380:ffdb:4892:eb9c:e658:ab07%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:65097}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 299fdb7ae6821214d07bf4c09fbeb55e
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:55017}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 71dd4e18c38f466371d3066fa3f5f494
+*** Element info: {Using=xpath, value=//*[@id=&quot;approveTTTable&quot;]/tbody[2]/tr[1]/td[6]/a}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
-	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-	at com.actitime.qa.pages.UsersPage.changeStatus(UsersPage.java:56)
-	at com.actitime.qa.testcases.ViewUsersTest.changeStatus(ViewUsersTest.java:49)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.getText(Unknown Source)
+	at com.actitime.qa.pages.ApproveTimeTrackPage.rejectSelected(ApproveTimeTrackPage.java:74)
+	at com.actitime.qa.testcases.TimeTrackTest.rejectTimeTrack(TimeTrackTest.java:57)
 </failure>
     <system-out>Before navigating to: &apos;https://demo.actitime.com/login.do&apos;
 Navigated to:&apos;https://demo.actitime.com/login.do&apos;
@@ -108,132 +114,52 @@ Trying to find Element By : By.xpath: //input[@type=&apos;password&apos;and @nam
 Found Element By : By.xpath: //input[@type=&apos;password&apos;and @name=&apos;pwd&apos;]
 Trying to find Element By : By.xpath: //a[@id=&apos;loginButton&apos;]
 Found Element By : By.xpath: //a[@id=&apos;loginButton&apos;]
-Trying to click on: [[ChromeDriver: chrome on MAC (299fdb7ae6821214d07bf4c09fbeb55e)] -&gt; xpath: //a[@id=&apos;loginButton&apos;]]
-Clicked on: [[ChromeDriver: chrome on MAC (299fdb7ae6821214d07bf4c09fbeb55e)] -&gt; xpath: //a[@id=&apos;loginButton&apos;]]
-Trying to find Element By : By.xpath: //*[@id=&quot;topnav&quot;]/tbody/tr[1]/td[2]/div/a
-Found Element By : By.xpath: //*[@id=&quot;topnav&quot;]/tbody/tr[1]/td[2]/div/a
-Trying to click on: [[ChromeDriver: chrome on MAC (299fdb7ae6821214d07bf4c09fbeb55e)] -&gt; xpath: //*[@id=&quot;topnav&quot;]/tbody/tr[1]/td[2]/div/a]
-Clicked on: [[ChromeDriver: chrome on MAC (299fdb7ae6821214d07bf4c09fbeb55e)] -&gt; xpath: //*[@id=&quot;topnav&quot;]/tbody/tr[1]/td[2]/div/a]
-Trying to find Element By : By.xpath: //*[@id=&quot;topnav&quot;]/tbody/tr/td[6]/a
-Found Element By : By.xpath: //*[@id=&quot;topnav&quot;]/tbody/tr/td[6]/a
-Trying to click on: [[ChromeDriver: chrome on MAC (299fdb7ae6821214d07bf4c09fbeb55e)] -&gt; xpath: //*[@id=&quot;topnav&quot;]/tbody/tr/td[6]/a]
-Clicked on: [[ChromeDriver: chrome on MAC (299fdb7ae6821214d07bf4c09fbeb55e)] -&gt; xpath: //*[@id=&quot;topnav&quot;]/tbody/tr/td[6]/a]
-Trying to find Element By : By.xpath: //*[@id=&quot;userListTable&quot;]/tbody[1]/tr[1]/td[24]/span
-Found Element By : By.xpath: //*[@id=&quot;userListTable&quot;]/tbody[1]/tr[1]/td[24]/span
-Trying to find Element By : By.xpath: //*[@id=&quot;userListTable&quot;]/tbody[1]/tr[1]/td[24]/span
-Found Element By : By.xpath: //*[@id=&quot;userListTable&quot;]/tbody[1]/tr[1]/td[24]/span
-Trying to click on: [[ChromeDriver: chrome on MAC (299fdb7ae6821214d07bf4c09fbeb55e)] -&gt; xpath: //*[@id=&quot;userListTable&quot;]/tbody[1]/tr[1]/td[24]/span]
-Exception occured: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;accountTab-accountStateText-span&quot;&gt;...&lt;/span&gt; is not clickable at point (1172, 317). Other element would receive the click: &lt;div class=&quot;loadingMoire welcomeScreenLoadingMoire&quot; style=&quot;display: flex;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=105.0.5195.125)
+Trying to click on: [[ChromeDriver: chrome on MAC (71dd4e18c38f466371d3066fa3f5f494)] -&gt; xpath: //a[@id=&apos;loginButton&apos;]]
+Clicked on: [[ChromeDriver: chrome on MAC (71dd4e18c38f466371d3066fa3f5f494)] -&gt; xpath: //a[@id=&apos;loginButton&apos;]]
+Trying to find Element By : By.xpath: //*[@id=&quot;topnav&quot;]/tbody/tr[2]/td[2]/div[4]/a
+Found Element By : By.xpath: //*[@id=&quot;topnav&quot;]/tbody/tr[2]/td[2]/div[4]/a
+Trying to click on: [[ChromeDriver: chrome on MAC (71dd4e18c38f466371d3066fa3f5f494)] -&gt; xpath: //*[@id=&quot;topnav&quot;]/tbody/tr[2]/td[2]/div[4]/a]
+Clicked on: [[ChromeDriver: chrome on MAC (71dd4e18c38f466371d3066fa3f5f494)] -&gt; xpath: //*[@id=&quot;topnav&quot;]/tbody/tr[2]/td[2]/div[4]/a]
+Trying to find Element By : By.xpath: //*[@id=&quot;statusFilterButton&quot;]
+Found Element By : By.xpath: //*[@id=&quot;statusFilterButton&quot;]
+Trying to click on: [[ChromeDriver: chrome on MAC (71dd4e18c38f466371d3066fa3f5f494)] -&gt; xpath: //*[@id=&quot;statusFilterButton&quot;]]
+Clicked on: [[ChromeDriver: chrome on MAC (71dd4e18c38f466371d3066fa3f5f494)] -&gt; xpath: //*[@id=&quot;statusFilterButton&quot;]]
+Trying to find Element By : By.xpath: //*[@id=&quot;notReadyForApprovalCbx&quot;]
+Found Element By : By.xpath: //*[@id=&quot;notReadyForApprovalCbx&quot;]
+Trying to click on: [[ChromeDriver: chrome on MAC (71dd4e18c38f466371d3066fa3f5f494)] -&gt; xpath: //*[@id=&quot;notReadyForApprovalCbx&quot;]]
+Clicked on: [[ChromeDriver: chrome on MAC (71dd4e18c38f466371d3066fa3f5f494)] -&gt; xpath: //*[@id=&quot;notReadyForApprovalCbx&quot;]]
+Trying to find Element By : By.xpath: //*[@id=&quot;rejectedCbx&quot;]
+Found Element By : By.xpath: //*[@id=&quot;rejectedCbx&quot;]
+Trying to click on: [[ChromeDriver: chrome on MAC (71dd4e18c38f466371d3066fa3f5f494)] -&gt; xpath: //*[@id=&quot;rejectedCbx&quot;]]
+Clicked on: [[ChromeDriver: chrome on MAC (71dd4e18c38f466371d3066fa3f5f494)] -&gt; xpath: //*[@id=&quot;rejectedCbx&quot;]]
+Trying to find Element By : By.xpath: /html/body/div[12]/div[3]/div/button[1]
+Found Element By : By.xpath: /html/body/div[12]/div[3]/div/button[1]
+Trying to click on: [[ChromeDriver: chrome on MAC (71dd4e18c38f466371d3066fa3f5f494)] -&gt; xpath: /html/body/div[12]/div[3]/div/button[1]]
+Clicked on: [[ChromeDriver: chrome on MAC (71dd4e18c38f466371d3066fa3f5f494)] -&gt; xpath: /html/body/div[12]/div[3]/div/button[1]]
+Trying to find Element By : By.xpath: //*[@id=&quot;approveTTTable&quot;]/tbody[2]/tr[1]/td[7]/input
+Found Element By : By.xpath: //*[@id=&quot;approveTTTable&quot;]/tbody[2]/tr[1]/td[7]/input
+Trying to click on: [[ChromeDriver: chrome on MAC (71dd4e18c38f466371d3066fa3f5f494)] -&gt; xpath: //*[@id=&quot;approveTTTable&quot;]/tbody[2]/tr[1]/td[7]/input]
+Clicked on: [[ChromeDriver: chrome on MAC (71dd4e18c38f466371d3066fa3f5f494)] -&gt; xpath: //*[@id=&quot;approveTTTable&quot;]/tbody[2]/tr[1]/td[7]/input]
+Trying to find Element By : By.xpath: //*[@id=&quot;rejectButton&quot;]
+Found Element By : By.xpath: //*[@id=&quot;rejectButton&quot;]
+Trying to click on: [[ChromeDriver: chrome on MAC (71dd4e18c38f466371d3066fa3f5f494)] -&gt; xpath: //*[@id=&quot;rejectButton&quot;]]
+Clicked on: [[ChromeDriver: chrome on MAC (71dd4e18c38f466371d3066fa3f5f494)] -&gt; xpath: //*[@id=&quot;rejectButton&quot;]]
+Trying to find Element By : By.xpath: //*[@id=&quot;approveTTTable&quot;]/tbody[2]/tr[1]/td[6]/a
+Exception occured: org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : This operation was not applied to some entries because their current status coincides with the operation status.}
+  (Session info: chrome=105.0.5195.125): This operation was not applied to some entries because their current status coincides with the operation status.
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2380:ffdb:4892:eb9c:e658:ab07%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:65097}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 299fdb7ae6821214d07bf4c09fbeb55e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:55017}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 71dd4e18c38f466371d3066fa3f5f494
+*** Element info: {Using=xpath, value=//*[@id=&quot;approveTTTable&quot;]/tbody[2]/tr[1]/td[6]/a}
 </system-out>
-    <system-err>Starting ChromeDriver 105.0.5195.52 (412c95e518836d8a7d97250d62b29c2ae6a26a85-refs/branch-heads/5195@{#853}) on port 44005
+    <system-err>Starting ChromeDriver 105.0.5195.52 (412c95e518836d8a7d97250d62b29c2ae6a26a85-refs/branch-heads/5195@{#853}) on port 18031
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Sep 22, 2022 10:04:00 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Sep 22, 2022 12:10:44 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 </system-err>
   </testcase>
-  <testcase classname="com.actitime.qa.testcases.ViewUsersTest" name="seup" time="47.556">
-    <failure message="element click intercepted: Element &lt;a href=&quot;/administration/userlist.do&quot; class=&quot;content employees&quot;&gt;...&lt;/a&gt; is not clickable at point (972, 35). Other element would receive the click: &lt;div id=&quot;welcomeScreenLightbox_content&quot; class=&quot;content&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2380:ffdb:4892:eb9c:e658:ab07%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:65151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 69acf420430b36ef85b21613fdf8bdae" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/administration/userlist.do&quot; class=&quot;content employees&quot;&gt;...&lt;/a&gt; is not clickable at point (972, 35). Other element would receive the click: &lt;div id=&quot;welcomeScreenLightbox_content&quot; class=&quot;content&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2380:ffdb:4892:eb9c:e658:ab07%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:65151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 69acf420430b36ef85b21613fdf8bdae
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
-	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-	at com.actitime.qa.pages.ActiPlanPage.clickOnUsersLink(ActiPlanPage.java:46)
-	at com.actitime.qa.testcases.ViewUsersTest.seup(ViewUsersTest.java:32)
-</failure>
-    <system-out>Before navigating to: &apos;https://demo.actitime.com/login.do&apos;
-Navigated to:&apos;https://demo.actitime.com/login.do&apos;
-Trying to find Element By : By.xpath: //input[@name=&apos;username&apos;]
-Found Element By : By.xpath: //input[@name=&apos;username&apos;]
-Trying to find Element By : By.xpath: //input[@type=&apos;password&apos;and @name=&apos;pwd&apos;]
-Found Element By : By.xpath: //input[@type=&apos;password&apos;and @name=&apos;pwd&apos;]
-Trying to find Element By : By.xpath: //a[@id=&apos;loginButton&apos;]
-Found Element By : By.xpath: //a[@id=&apos;loginButton&apos;]
-Trying to click on: [[ChromeDriver: chrome on MAC (69acf420430b36ef85b21613fdf8bdae)] -&gt; xpath: //a[@id=&apos;loginButton&apos;]]
-Clicked on: [[ChromeDriver: chrome on MAC (69acf420430b36ef85b21613fdf8bdae)] -&gt; xpath: //a[@id=&apos;loginButton&apos;]]
-Trying to find Element By : By.xpath: //*[@id=&quot;topnav&quot;]/tbody/tr[1]/td[2]/div/a
-Found Element By : By.xpath: //*[@id=&quot;topnav&quot;]/tbody/tr[1]/td[2]/div/a
-Trying to click on: [[ChromeDriver: chrome on MAC (69acf420430b36ef85b21613fdf8bdae)] -&gt; xpath: //*[@id=&quot;topnav&quot;]/tbody/tr[1]/td[2]/div/a]
-Clicked on: [[ChromeDriver: chrome on MAC (69acf420430b36ef85b21613fdf8bdae)] -&gt; xpath: //*[@id=&quot;topnav&quot;]/tbody/tr[1]/td[2]/div/a]
-Trying to find Element By : By.xpath: //*[@id=&quot;topnav&quot;]/tbody/tr/td[6]/a
-Found Element By : By.xpath: //*[@id=&quot;topnav&quot;]/tbody/tr/td[6]/a
-Trying to click on: [[ChromeDriver: chrome on MAC (69acf420430b36ef85b21613fdf8bdae)] -&gt; xpath: //*[@id=&quot;topnav&quot;]/tbody/tr/td[6]/a]
-Exception occured: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/administration/userlist.do&quot; class=&quot;content employees&quot;&gt;...&lt;/a&gt; is not clickable at point (972, 35). Other element would receive the click: &lt;div id=&quot;welcomeScreenLightbox_content&quot; class=&quot;content&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2380:ffdb:4892:eb9c:e658:ab07%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:65151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 69acf420430b36ef85b21613fdf8bdae
-</system-out>
-    <system-err>Starting ChromeDriver 105.0.5195.52 (412c95e518836d8a7d97250d62b29c2ae6a26a85-refs/branch-heads/5195@{#853}) on port 1580
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Sep 22, 2022 10:04:58 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-</system-err>
-  </testcase>
-  <testcase classname="com.actitime.qa.testcases.ViewUsersTest" name="changeApprovedAdmin" time="47.562">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.actitime.qa.testcases.ViewUsersTest" name="tearDown" time="47.564">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.actitime.qa.testcases.ViewUsersTest" name="seup" time="47.566">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.actitime.qa.testcases.ViewUsersTest" name="viewAccountInfo" time="47.566">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.actitime.qa.testcases.ViewUsersTest" name="tearDown" time="47.566">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.actitime.qa.testcases.TimeTrackTest" name="rejectTimeTrack" time="13.722"/>
-  <testcase classname="com.actitime.qa.testcases.TimeTrackTest" name="approveTimeTrack" time="13.029"/>
-  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="LoginTestInvalid" time="3.745"/>
-  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="LoginTestInvalid" time="4.007"/>
-  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="LoginTestInvalid" time="6.97"/>
-  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="LoginTest" time="9.491"/>
-  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="LoginTest" time="8.117"/>
-  <testcase classname="com.actitime.qa.testcases.HomePageTest" name="homePageTaskLinkTest" time="13.499"/>
 </testsuite>

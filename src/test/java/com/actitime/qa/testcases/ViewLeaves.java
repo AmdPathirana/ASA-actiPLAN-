@@ -27,7 +27,7 @@ public class ViewLeaves extends TestBase{
 	
 	
 	@BeforeMethod
-	public void seup() {
+	public void seup() throws InterruptedException {
 		initialization();
 		loginPage = new LoginPage();
 		homePage = loginPage.loging(properties.getProperty("username"), properties.getProperty("password"));

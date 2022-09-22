@@ -20,6 +20,27 @@ public class ApproveTimeTrackPage extends TestBase {
 
     @FindBy(xpath = "//*[@id=\"statusFilterButton\"]")
     WebElement filter;
+    
+    @FindBy(xpath = "//*[@id=\"notReadyForApprovalCbx\"]")
+    WebElement notReadyCheckBox;
+
+    @FindBy(xpath = "//*[@id=\"rejectedCbx\"]")
+    WebElement rejectCheckBox;
+
+    @FindBy(xpath = "/html/body/div[12]/div[3]/div/button[1]")
+    WebElement applyFilterButton;
+
+    @FindBy(xpath = "//*[@id=\"approveTTTable\"]/tbody[2]/tr[1]/td[7]/input")
+    WebElement firstCheckBox;
+
+    @FindBy(xpath = "//*[@id=\"approveButton\"]")
+    WebElement approveBtn;
+
+    @FindBy(xpath = "//*[@id=\"rejectButton\"]")
+    WebElement rejectBtn;
+
+    @FindBy(xpath = "//*[@id=\"approveTTTable\"]/tbody[2]/tr[1]/td[6]/a")
+    WebElement revokeText;
 	
 		
 		//initialization
@@ -30,6 +51,28 @@ public class ApproveTimeTrackPage extends TestBase {
 		
 		
 		//Action/Methods
+		public void viewPendingTimeSheets() {
+	        filter.click();
+	        notReadyCheckBox.click();
+	        rejectCheckBox.click();
+	        applyFilterButton.click();
+	    }
+
+	    public void selectFirstTimeSheet() {
+	        firstCheckBox.click();
+	    }
+
+	    public void approveSelected() throws InterruptedException {
+	        approveBtn.click();
+	        Thread.sleep(1000);
+	        Assert.assertEquals(revokeText.getText(),"revoke");
+	    }
+
+	    public void rejectSelected() throws InterruptedException {
+	        rejectBtn.click();
+	        Thread.sleep(1000);
+	        Assert.assertEquals(revokeText.getText(),"revoke");
+	    }
 		
        
 	

@@ -24,7 +24,7 @@ public class ViewUsersTest extends TestBase{
 	
 	
 	@BeforeMethod
-	public void seup() {
+	public void seup() throws InterruptedException {
 		initialization();
 		loginPage = new LoginPage();
 		homePage = loginPage.loging(properties.getProperty("username"), properties.getProperty("password"));
@@ -50,7 +50,7 @@ public class ViewUsersTest extends TestBase{
 	}
 	
 	@Test(priority = 2)
-	public void viewAccountInfo() {	
+	public void viewAccountInfo() throws InterruptedException {	
 		usersPage.viewInformation();
 	}
 	

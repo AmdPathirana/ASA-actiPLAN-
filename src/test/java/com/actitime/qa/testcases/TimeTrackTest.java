@@ -41,25 +41,26 @@ public class TimeTrackTest extends TestBase{
 	}
 	
 	
-	@Test(priority = 2)
-	public void approveTimeTrack() {
-		
-	homePage.clickOnTaskLink();
+	 @Test(priority = 2)
+	    public void approveTimeTrack() throws InterruptedException {
+		 approveTimeTrackPage = homePage.clickOnSwitchToApproveTimeTrack();
+		 approveTimeTrackPage.viewPendingTimeSheets();
+		 approveTimeTrackPage.selectFirstTimeSheet();
+		 approveTimeTrackPage.approveSelected();
+	    }
 
-		
-	}
+	    @Test(priority = 3)
+	    public void rejectTimeTrack() throws InterruptedException {
+	    	approveTimeTrackPage = homePage.clickOnSwitchToApproveTimeTrack();
+	    	approveTimeTrackPage.viewPendingTimeSheets();
+	    	approveTimeTrackPage.selectFirstTimeSheet();
+	    	approveTimeTrackPage.rejectSelected();
+	    }
 	
-	@Test(priority = 2)
-	public void rejectTimeTrack() {
-		
-	homePage.clickOnTaskLink();
-
-		
-	}
+	
 	
 	@AfterMethod
 	public void tearDown() {
-		
 		driver.quit();
 	}
 	

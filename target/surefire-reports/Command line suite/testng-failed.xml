@@ -3,15 +3,13 @@
 <suite name="Failed suite [Command line suite]" verbose="0">
   <test thread-count="5" name="Command line test(failed)" verbose="0">
     <classes>
-      <class name="com.actitime.qa.testcases.ViewUsersTest">
+      <class name="com.actitime.qa.testcases.TimeTrackTest">
         <methods>
-          <include name="viewAccountInfo"/>
-          <include name="changeApprovedAdmin"/>
-          <include name="changeStatus"/>
           <include name="seup"/>
+          <include name="rejectTimeTrack"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.actitime.qa.testcases.ViewUsersTest -->
+      </class> <!-- com.actitime.qa.testcases.TimeTrackTest -->
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->

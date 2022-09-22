@@ -70,7 +70,7 @@ public class HomePage extends TestBase {
 			
 		}
         
-        public ActiPlanPage clickOnSwitchToActiPlans() {
+        public ActiPlanPage clickOnSwitchToActiPlans(){
             switchToActiPlans.click();
             return new ActiPlanPage();
         }
