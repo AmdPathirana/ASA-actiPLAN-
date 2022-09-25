@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="15" failures="2" name="TestSuite" time="2,193.353" errors="0" skipped="0">
+<testsuite tests="23" failures="1" name="TestSuite" time="541.928" errors="0" skipped="11">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="16.0.1+9-24"/>
@@ -22,7 +22,7 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/amodpathirana/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf7245695501297428838.tmp"/>
+    <property name="classworlds.conf" value="/Users/amodpathirana/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf11778314241026315477.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/amodpathirana/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="jdk.debug" value="release"/>
@@ -39,7 +39,7 @@
     <property name="java.class.path" value="/Users/amodpathirana/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_1.16.0.20210129-0849/jars/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="16"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-16.0.1.jdk/Contents/Home"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -55,28 +55,22 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="com.actitime.qa.testcases.ViewUsersTest" name="viewUsersTable" time="0.085"/>
-  <testcase classname="com.actitime.qa.testcases.TimeTrackTest" name="viewTimeTrackTest" time="23.77"/>
-  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="loginPageLogoTest" time="0.247"/>
-  <testcase classname="com.actitime.qa.testcases.HomePageTest" name="homePageLogoTest" time="7.004"/>
-  <testcase classname="com.actitime.qa.testcases.ViewUsersTest" name="changeStatus" time="1.874"/>
-  <testcase classname="com.actitime.qa.testcases.ViewUsersTest" name="changeApprovedAdmin" time="1.454"/>
-  <testcase classname="com.actitime.qa.testcases.ViewUsersTest" name="viewAccountInfo" time="1.55"/>
-  <testcase classname="com.actitime.qa.testcases.TimeTrackTest" name="approveTimeTrack" time="2,101.897">
-    <failure message="timeout: Timed out receiving message from renderer: 10.000
+  <testcase classname="com.actitime.qa.testcases.ViewUsersTest" name="seup" time="112.377">
+    <failure message="element not interactable
   (Session info: chrome=105.0.5195.125)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
+System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2380:145a:54c8:1fa:e28a:d4dd%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:49415}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ef96644cfc1e09593fbf5d97632e295b" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=105.0.5195.125)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
+System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2380:145a:54c8:1fa:e28a:d4dd%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-	at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:49415}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ef96644cfc1e09593fbf5d97632e295b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
@@ -86,379 +80,26 @@ Session ID: 246882c6704e1c8bfda7a852082ac3d9
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at jdk.internal.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at jdk.internal.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at jdk.internal.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at jdk.internal.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at jdk.internal.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at jdk.internal.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at jdk.internal.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at jdk.internal.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at jdk.internal.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at jdk.internal.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at jdk.internal.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at jdk.internal.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at jdk.internal.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at jdk.internal.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at jdk.internal.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at jdk.internal.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at jdk.internal.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at jdk.internal.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at jdk.internal.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
-	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
-	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:406)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
 	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
 	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
-	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-	at com.actitime.qa.pages.HomePage.clickOnSwitchToApproveTimeTrack(HomePage.java:84)
-	at com.actitime.qa.testcases.TimeTrackTest.approveTimeTrack(TimeTrackTest.java:46)
+	at com.actitime.qa.pages.ActiPlanPage.clickOnUsersLink(ActiPlanPage.java:54)
+	at com.actitime.qa.testcases.ViewUsersTest.seup(ViewUsersTest.java:32)
 </failure>
-    <system-out>Before navigating to: &apos;https://demo.actitime.com/login.do&apos;
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@1517365b
+Before navigating to: &apos;https://demo.actitime.com/login.do&apos;
 Navigated to:&apos;https://demo.actitime.com/login.do&apos;
 Trying to find Element By : By.xpath: //input[@name=&apos;username&apos;]
 Found Element By : By.xpath: //input[@name=&apos;username&apos;]
@@ -466,654 +107,75 @@ Trying to find Element By : By.xpath: //input[@type=&apos;password&apos;and @nam
 Found Element By : By.xpath: //input[@type=&apos;password&apos;and @name=&apos;pwd&apos;]
 Trying to find Element By : By.xpath: //a[@id=&apos;loginButton&apos;]
 Found Element By : By.xpath: //a[@id=&apos;loginButton&apos;]
-Trying to click on: [[ChromeDriver: chrome on MAC (246882c6704e1c8bfda7a852082ac3d9)] -&gt; xpath: //a[@id=&apos;loginButton&apos;]]
-Clicked on: [[ChromeDriver: chrome on MAC (246882c6704e1c8bfda7a852082ac3d9)] -&gt; xpath: //a[@id=&apos;loginButton&apos;]]
-Trying to find Element By : By.xpath: //*[@id=&quot;topnav&quot;]/tbody/tr[2]/td[2]/div[4]/a
-Found Element By : By.xpath: //*[@id=&quot;topnav&quot;]/tbody/tr[2]/td[2]/div[4]/a
-Trying to click on: [[ChromeDriver: chrome on MAC (246882c6704e1c8bfda7a852082ac3d9)] -&gt; xpath: //*[@id=&quot;topnav&quot;]/tbody/tr[2]/td[2]/div[4]/a]
-Exception occured: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/administration/approve_tt.do&quot; class=&quot;item&quot;&gt;...&lt;/a&gt; is not clickable at point (962, 93). Other element would receive the click: &lt;div id=&quot;preInsertedTransformedMoireId&quot; class=&quot;transformedMoireClass&quot; style=&quot;transition: opacity 600ms ease-in-out 0s; opacity: 0;&quot;&gt;&lt;/div&gt;
+Trying to click on: [[ChromeDriver: chrome on MAC (ef96644cfc1e09593fbf5d97632e295b)] -&gt; xpath: //a[@id=&apos;loginButton&apos;]]
+Clicked on: [[ChromeDriver: chrome on MAC (ef96644cfc1e09593fbf5d97632e295b)] -&gt; xpath: //a[@id=&apos;loginButton&apos;]]
+Trying to find Element By : By.xpath: //*[@id=&quot;topnav&quot;]/tbody/tr[1]/td[2]/div/a
+Found Element By : By.xpath: //*[@id=&quot;topnav&quot;]/tbody/tr[1]/td[2]/div/a
+Trying to click on: [[ChromeDriver: chrome on MAC (ef96644cfc1e09593fbf5d97632e295b)] -&gt; xpath: //*[@id=&quot;topnav&quot;]/tbody/tr[1]/td[2]/div/a]
+Clicked on: [[ChromeDriver: chrome on MAC (ef96644cfc1e09593fbf5d97632e295b)] -&gt; xpath: //*[@id=&quot;topnav&quot;]/tbody/tr[1]/td[2]/div/a]
+Trying to find Element By : By.xpath: //*[@id=&quot;welcomeScreenLightbox_content&quot;]
+Found Element By : By.xpath: //*[@id=&quot;welcomeScreenLightbox_content&quot;]
+Trying to find Element By : By.xpath: //*[@id=&quot;welcomeScreenLightbox_content&quot;]/table/tbody/tr/td/div[1]
+Found Element By : By.xpath: //*[@id=&quot;welcomeScreenLightbox_content&quot;]/table/tbody/tr/td/div[1]
+Trying to click on: [[ChromeDriver: chrome on MAC (ef96644cfc1e09593fbf5d97632e295b)] -&gt; xpath: //*[@id=&quot;welcomeScreenLightbox_content&quot;]/table/tbody/tr/td/div[1]]
+Exception occured: org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=105.0.5195.125)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
+System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2380:145a:54c8:1fa:e28a:d4dd%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
-Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=105.0.5195.125)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 246882c6704e1c8bfda7a852082ac3d9
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:49415}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ef96644cfc1e09593fbf5d97632e295b
 </system-out>
-    <system-err>Starting ChromeDriver 105.0.5195.52 (412c95e518836d8a7d97250d62b29c2ae6a26a85-refs/branch-heads/5195@{#853}) on port 5009
+    <system-err>Starting ChromeDriver 105.0.5195.52 (412c95e518836d8a7d97250d62b29c2ae6a26a85-refs/branch-heads/5195@{#853}) on port 46076
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Sep 22, 2022 10:31:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-[1663866151.502][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866151.504][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866161.506][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866171.515][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866171.516][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866181.518][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866191.527][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866191.528][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866201.530][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866211.559][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866211.560][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866221.562][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866231.570][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866231.571][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866241.573][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866251.583][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866251.583][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866261.585][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866271.615][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866271.616][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866281.618][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866291.625][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866291.625][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866301.627][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866311.635][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866311.636][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866321.638][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866331.659][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866331.659][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866341.661][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866351.669][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866351.669][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866361.672][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866371.679][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866371.680][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866381.682][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866391.711][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866391.711][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866401.713][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866411.723][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866411.723][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866421.725][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866431.734][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866431.734][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866441.737][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866451.757][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866451.758][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866461.760][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866471.768][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866471.769][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866481.771][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866491.779][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866491.779][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866501.781][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866511.800][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866511.801][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866521.803][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866531.811][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866531.811][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866541.813][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866551.822][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866551.822][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866561.824][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866571.847][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866571.847][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866581.850][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866591.858][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866591.858][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866601.860][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866611.869][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866611.869][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866621.871][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866631.898][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866631.899][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866641.900][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866651.906][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866651.907][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866661.909][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866671.917][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866671.918][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866681.920][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866691.949][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866691.949][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866701.951][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866711.959][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866711.959][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866721.961][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866731.970][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866731.970][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866741.972][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866751.997][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866751.998][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866762.000][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866772.009][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866772.010][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866782.012][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866792.020][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866792.020][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866802.021][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866812.072][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866812.073][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866822.075][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866832.083][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866832.083][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866842.085][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866852.093][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866852.093][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866862.095][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866872.118][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866872.118][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866882.121][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866892.128][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866892.129][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866902.131][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866912.139][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866912.139][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866922.141][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866932.160][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866932.161][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866942.163][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866952.171][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866952.171][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866962.174][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866972.182][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866972.182][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663866982.183][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866992.205][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663866992.205][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867002.207][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867012.214][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867012.215][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867022.217][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867032.225][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867032.225][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867042.228][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867052.263][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867052.263][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867062.265][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867072.273][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867072.274][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867082.276][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867092.284][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867092.284][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867102.285][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867112.312][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867112.312][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867122.312][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867132.320][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867132.320][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867142.322][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867152.330][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867152.330][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867162.332][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867172.356][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867172.356][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867182.358][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867192.366][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867192.366][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867202.369][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867212.377][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867212.377][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867222.379][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867232.396][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867232.397][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867242.399][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867252.407][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867252.407][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867262.409][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867272.418][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867272.418][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867282.420][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867292.437][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867292.438][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867302.440][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867312.448][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867312.448][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867322.450][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867332.458][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867332.459][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867342.461][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867352.477][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867352.477][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867362.480][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867372.487][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867372.488][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867382.490][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867392.498][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867392.498][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867402.501][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867412.520][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867412.520][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867422.522][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867432.530][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867432.531][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867442.533][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867452.541][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867452.541][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867462.543][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867472.564][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867472.564][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867482.567][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867492.575][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867492.575][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867502.576][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867512.584][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867512.584][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867522.586][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867532.612][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867532.613][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867542.615][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867552.623][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867552.623][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867562.625][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867572.633][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867572.634][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867582.636][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867592.654][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867592.655][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867602.657][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867612.665][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867612.665][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867622.667][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867632.675][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867632.676][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867642.678][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867652.695][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867652.695][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867662.698][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867672.706][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867672.706][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867682.708][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867692.718][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867692.718][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867702.720][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867712.741][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867712.741][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867722.743][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867732.752][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867732.752][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867742.754][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867752.761][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867752.762][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867762.764][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867772.783][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867772.783][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867782.785][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867792.793][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867792.794][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867802.796][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867812.803][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867812.804][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867822.804][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867832.822][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867832.823][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867842.825][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867852.833][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867852.833][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867862.835][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867872.843][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867872.843][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867882.846][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867892.864][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867892.864][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867902.866][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867912.874][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867912.875][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867922.877][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867932.885][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867932.885][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867942.887][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867952.908][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867952.908][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867962.910][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867972.918][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867972.918][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663867982.920][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867992.928][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663867992.929][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663868002.931][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663868012.950][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663868012.950][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663868022.952][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663868032.961][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663868032.961][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663868042.963][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663868052.970][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663868052.971][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663868062.973][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663868073.000][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663868073.000][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663868083.003][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663868093.010][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663868093.011][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663868103.013][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663868113.021][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663868113.021][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663868123.023][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663868133.041][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663868133.041][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663868143.042][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663868153.050][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663868153.051][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663868163.053][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663868173.061][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663868173.067][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
-[1663868183.068][SEVERE]: Timed out receiving message from renderer: 10.000
-[1663868223.069][SEVERE]: Timed out receiving message from renderer: 40.000
-[1663868233.899][SEVERE]: Timed out receiving message from renderer: 40.000
-</system-err>
-  </testcase>
-  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="LoginTestInvalid" time="3.916"/>
-  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="LoginTestInvalid" time="4.003"/>
-  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="LoginTestInvalid" time="4.31"/>
-  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="LoginTest" time="8.517"/>
-  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="LoginTest" time="8.375"/>
-  <testcase classname="com.actitime.qa.testcases.HomePageTest" name="homePageTaskLinkTest" time="12.828"/>
-  <testcase classname="com.actitime.qa.testcases.TimeTrackTest" name="rejectTimeTrack" time="13.523">
-    <failure message="unexpected alert open: {Alert text : This operation was not applied to some entries because their current status coincides with the operation status.}
-  (Session info: chrome=105.0.5195.125): This operation was not applied to some entries because their current status coincides with the operation status.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54568}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 075ebba1ea0c0e6594ed0b6d06f45d14
-*** Element info: {Using=xpath, value=//*[@id=&quot;approveTTTable&quot;]/tbody[2]/tr[1]/td[6]/a}" type="org.openqa.selenium.UnhandledAlertException">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : This operation was not applied to some entries because their current status coincides with the operation status.}
-  (Session info: chrome=105.0.5195.125): This operation was not applied to some entries because their current status coincides with the operation status.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54568}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 075ebba1ea0c0e6594ed0b6d06f45d14
-*** Element info: {Using=xpath, value=//*[@id=&quot;approveTTTable&quot;]/tbody[2]/tr[1]/td[6]/a}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.getText(Unknown Source)
-	at com.actitime.qa.pages.ApproveTimeTrackPage.rejectSelected(ApproveTimeTrackPage.java:74)
-	at com.actitime.qa.testcases.TimeTrackTest.rejectTimeTrack(TimeTrackTest.java:56)
-</failure>
-    <system-out>Before navigating to: &apos;https://demo.actitime.com/login.do&apos;
-Navigated to:&apos;https://demo.actitime.com/login.do&apos;
-Trying to find Element By : By.xpath: //input[@name=&apos;username&apos;]
-Found Element By : By.xpath: //input[@name=&apos;username&apos;]
-Trying to find Element By : By.xpath: //input[@type=&apos;password&apos;and @name=&apos;pwd&apos;]
-Found Element By : By.xpath: //input[@type=&apos;password&apos;and @name=&apos;pwd&apos;]
-Trying to find Element By : By.xpath: //a[@id=&apos;loginButton&apos;]
-Found Element By : By.xpath: //a[@id=&apos;loginButton&apos;]
-Trying to click on: [[ChromeDriver: chrome on MAC (075ebba1ea0c0e6594ed0b6d06f45d14)] -&gt; xpath: //a[@id=&apos;loginButton&apos;]]
-Clicked on: [[ChromeDriver: chrome on MAC (075ebba1ea0c0e6594ed0b6d06f45d14)] -&gt; xpath: //a[@id=&apos;loginButton&apos;]]
-Trying to find Element By : By.xpath: //*[@id=&quot;topnav&quot;]/tbody/tr[2]/td[2]/div[4]/a
-Found Element By : By.xpath: //*[@id=&quot;topnav&quot;]/tbody/tr[2]/td[2]/div[4]/a
-Trying to click on: [[ChromeDriver: chrome on MAC (075ebba1ea0c0e6594ed0b6d06f45d14)] -&gt; xpath: //*[@id=&quot;topnav&quot;]/tbody/tr[2]/td[2]/div[4]/a]
-Clicked on: [[ChromeDriver: chrome on MAC (075ebba1ea0c0e6594ed0b6d06f45d14)] -&gt; xpath: //*[@id=&quot;topnav&quot;]/tbody/tr[2]/td[2]/div[4]/a]
-Trying to find Element By : By.xpath: //*[@id=&quot;approveTTTable&quot;]/tbody[2]/tr[1]/td[7]/input
-Found Element By : By.xpath: //*[@id=&quot;approveTTTable&quot;]/tbody[2]/tr[1]/td[7]/input
-Trying to click on: [[ChromeDriver: chrome on MAC (075ebba1ea0c0e6594ed0b6d06f45d14)] -&gt; xpath: //*[@id=&quot;approveTTTable&quot;]/tbody[2]/tr[1]/td[7]/input]
-Clicked on: [[ChromeDriver: chrome on MAC (075ebba1ea0c0e6594ed0b6d06f45d14)] -&gt; xpath: //*[@id=&quot;approveTTTable&quot;]/tbody[2]/tr[1]/td[7]/input]
-Trying to find Element By : By.xpath: //*[@id=&quot;rejectButton&quot;]
-Found Element By : By.xpath: //*[@id=&quot;rejectButton&quot;]
-Trying to click on: [[ChromeDriver: chrome on MAC (075ebba1ea0c0e6594ed0b6d06f45d14)] -&gt; xpath: //*[@id=&quot;rejectButton&quot;]]
-Clicked on: [[ChromeDriver: chrome on MAC (075ebba1ea0c0e6594ed0b6d06f45d14)] -&gt; xpath: //*[@id=&quot;rejectButton&quot;]]
-Trying to find Element By : By.xpath: //*[@id=&quot;approveTTTable&quot;]/tbody[2]/tr[1]/td[6]/a
-Exception occured: org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : This operation was not applied to some entries because their current status coincides with the operation status.}
-  (Session info: chrome=105.0.5195.125): This operation was not applied to some entries because their current status coincides with the operation status.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54568}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 075ebba1ea0c0e6594ed0b6d06f45d14
-*** Element info: {Using=xpath, value=//*[@id=&quot;approveTTTable&quot;]/tbody[2]/tr[1]/td[6]/a}
-</system-out>
-    <system-err>Starting ChromeDriver 105.0.5195.52 (412c95e518836d8a7d97250d62b29c2ae6a26a85-refs/branch-heads/5195@{#853}) on port 14892
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Sep 22, 2022 11:09:38 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Sep 25, 2022 9:57:12 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 </system-err>
   </testcase>
+  <testcase classname="com.actitime.qa.testcases.ViewUsersTest" name="viewUsersTable" time="112.383">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.actitime.qa.testcases.ViewUsersTest" name="tearDown" time="112.383">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.actitime.qa.testcases.TimeTrackTest" name="viewTimeTrackTest" time="28.037"/>
+  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="loginPageLogoTest" time="0.272"/>
+  <testcase classname="com.actitime.qa.testcases.HomePageTest" name="homePageLogoTest" time="8.333"/>
+  <testcase classname="com.actitime.qa.testcases.ViewUsersTest" name="seup" time="8.426">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.actitime.qa.testcases.ViewUsersTest" name="changeStatus" time="8.427">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.actitime.qa.testcases.ViewUsersTest" name="tearDown" time="8.427">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.actitime.qa.testcases.ViewUsersTest" name="seup" time="8.427">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.actitime.qa.testcases.ViewUsersTest" name="changeApprovedAdmin" time="8.427">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.actitime.qa.testcases.ViewUsersTest" name="tearDown" time="8.427">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.actitime.qa.testcases.ViewUsersTest" name="seup" time="8.427">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.actitime.qa.testcases.ViewUsersTest" name="viewAccountInfo" time="8.427">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.actitime.qa.testcases.ViewUsersTest" name="tearDown" time="8.428">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.actitime.qa.testcases.TimeTrackTest" name="approveTimeTrack" time="17.126"/>
+  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="LoginTestInvalid" time="4.708"/>
+  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="LoginTestInvalid" time="4.341"/>
+  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="LoginTestInvalid" time="5.344"/>
+  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="LoginTest" time="9.433"/>
+  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="LoginTest" time="20.125"/>
+  <testcase classname="com.actitime.qa.testcases.HomePageTest" name="homePageTaskLinkTest" time="16.288"/>
+  <testcase classname="com.actitime.qa.testcases.TimeTrackTest" name="rejectTimeTrack" time="14.935"/>
 </testsuite>
