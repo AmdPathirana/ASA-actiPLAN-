@@ -5,6 +5,7 @@
     <classes>
       <class name="com.actitime.qa.testcases.TimeTrackTest">
         <methods>
+          <include name="approveTimeTrack"/>
           <include name="seup"/>
           <include name="rejectTimeTrack"/>
           <include name="tearDown"/>

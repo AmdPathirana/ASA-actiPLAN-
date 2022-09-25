@@ -52,7 +52,6 @@ public class TimeTrackTest extends TestBase{
 	    @Test(priority = 3)
 	    public void rejectTimeTrack() throws InterruptedException {
 	    	approveTimeTrackPage = homePage.clickOnSwitchToApproveTimeTrack();
-	    	approveTimeTrackPage.viewPendingTimeSheets();
 	    	approveTimeTrackPage.selectFirstTimeSheet();
 	    	approveTimeTrackPage.rejectSelected();
 	    }

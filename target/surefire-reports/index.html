@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">15 methods, 1 failed,   14 passed</span>
+                    <span class="method-stats">15 methods, 2 failed,   13 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -100,6 +100,11 @@
                       <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
                     </span>
                     <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.actitime.qa.testcases.TimeTrackTest" class="method navigator-link" hash-for-method="approveTimeTrack">approveTimeTrack</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="com.actitime.qa.testcases.TimeTrackTest" class="method navigator-link" hash-for-method="rejectTimeTrack">rejectTimeTrack</a> <!-- method navigator-link -->
@@ -126,11 +131,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.actitime.qa.testcases.LogonPageTest" class="method navigator-link" hash-for-method="LoginTestInvalid(lakshman, hulzi14)">LoginTestInvalid(lakshman, hulzi14)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="com.actitime.qa.testcases.LogonPageTest" class="method navigator-link" hash-for-method="LoginTestInvalid(admin, amod12)">LoginTestInvalid(admin, amod12)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -141,7 +141,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.actitime.qa.testcases.TimeTrackTest" class="method navigator-link" hash-for-method="approveTimeTrack">approveTimeTrack</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.actitime.qa.testcases.LogonPageTest" class="method navigator-link" hash-for-method="LoginTestInvalid(lakshman, hulzi14)">LoginTestInvalid(lakshman, hulzi14)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -204,16 +204,285 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="approveTimeTrack">
+                  </a> <!-- approveTimeTrack -->
+                  <span class="method-name">approveTimeTrack</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
+  (Session info: chrome=105.0.5195.125)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 246882c6704e1c8bfda7a852082ac3d9
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.actitime.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:76)
+	at com.actitime.qa.util.WebEventListener.onException(WebEventListener.java:68)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:406)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at com.actitime.qa.pages.HomePage.clickOnSwitchToApproveTimeTrack(HomePage.java:84)
+	at com.actitime.qa.testcases.TimeTrackTest.approveTimeTrack(TimeTrackTest.java:46)
+... Removed 163 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="rejectTimeTrack">
                   </a> <!-- rejectTimeTrack -->
                   <span class="method-name">rejectTimeTrack</span>
                   <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : This operation was not applied to some entries because their current status coincides with the operation status.}
   (Session info: chrome=105.0.5195.125): This operation was not applied to some entries because their current status coincides with the operation status.
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2380:ffdb:4892:eb9c:e658:ab07%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
+System info: host: &apos;Amods-MacBook-Pro.local&apos;, ip: &apos;2402:4000:2181:dcee:3b:9eb6:d1c0:26f0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:55017}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 71dd4e18c38f466371d3066fa3f5f494
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/gw/59d_3_md4pz...}, goog:chromeOptions: {debuggerAddress: localhost:54568}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 075ebba1ea0c0e6594ed0b6d06f45d14
 *** Element info: {Using=xpath, value=//*[@id=&quot;approveTTTable&quot;]/tbody[2]/tr[1]/td[6]/a}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -231,7 +500,7 @@ Session ID: 71dd4e18c38f466371d3066fa3f5f494
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy13.getText(Unknown Source)
 	at com.actitime.qa.pages.ApproveTimeTrackPage.rejectSelected(ApproveTimeTrackPage.java:74)
-	at com.actitime.qa.testcases.TimeTrackTest.rejectTimeTrack(TimeTrackTest.java:57)
+	at com.actitime.qa.testcases.TimeTrackTest.rejectTimeTrack(TimeTrackTest.java:56)
 ... Removed 38 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -244,13 +513,6 @@ Session ID: 71dd4e18c38f466371d3066fa3f5f494
               <span class="class-name">com.actitime.qa.testcases.TimeTrackTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="approveTimeTrack">
-                  </a> <!-- approveTimeTrack -->
-                  <span class="method-name">approveTimeTrack</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="viewTimeTrackTest">
@@ -284,14 +546,6 @@ Session ID: 71dd4e18c38f466371d3066fa3f5f494
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="LoginTestInvalid(lakshman, hulzi14)">
-                  </a> <!-- LoginTestInvalid(lakshman, hulzi14) -->
-                  <span class="method-name">LoginTestInvalid</span>
-                  <span class="parameters">(lakshman, hulzi14)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="LoginTestInvalid(admin, amod12)">
                   </a> <!-- LoginTestInvalid(admin, amod12) -->
                   <span class="method-name">LoginTestInvalid</span>
@@ -304,6 +558,14 @@ Session ID: 71dd4e18c38f466371d3066fa3f5f494
                   </a> <!-- LoginTestInvalid(pathi123, manager) -->
                   <span class="method-name">LoginTestInvalid</span>
                   <span class="parameters">(pathi123, manager)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginTestInvalid(lakshman, hulzi14)">
+                  </a> <!-- LoginTestInvalid(lakshman, hulzi14) -->
+                  <span class="method-name">LoginTestInvalid</span>
+                  <span class="parameters">(lakshman, hulzi14)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -429,70 +691,70 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(15);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'viewTimeTrackTest')
+data.setCell(0, 1, 'approveTimeTrack')
 data.setCell(0, 2, 'com.actitime.qa.testcases.TimeTrackTest')
-data.setCell(0, 3, 25971);
+data.setCell(0, 3, 2101857);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'rejectTimeTrack')
+data.setCell(1, 1, 'viewTimeTrackTest')
 data.setCell(1, 2, 'com.actitime.qa.testcases.TimeTrackTest')
-data.setCell(1, 3, 16947);
+data.setCell(1, 3, 23768);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'homePageTaskLinkTest')
-data.setCell(2, 2, 'com.actitime.qa.testcases.HomePageTest')
-data.setCell(2, 3, 13804);
+data.setCell(2, 1, 'rejectTimeTrack')
+data.setCell(2, 2, 'com.actitime.qa.testcases.TimeTrackTest')
+data.setCell(2, 3, 13515);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'approveTimeTrack')
-data.setCell(3, 2, 'com.actitime.qa.testcases.TimeTrackTest')
-data.setCell(3, 3, 13289);
+data.setCell(3, 1, 'homePageTaskLinkTest')
+data.setCell(3, 2, 'com.actitime.qa.testcases.HomePageTest')
+data.setCell(3, 3, 12828);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'LoginTest')
 data.setCell(4, 2, 'com.actitime.qa.testcases.LogonPageTest')
-data.setCell(4, 3, 10235);
+data.setCell(4, 3, 8516);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'LoginTest')
 data.setCell(5, 2, 'com.actitime.qa.testcases.LogonPageTest')
-data.setCell(5, 3, 10154);
+data.setCell(5, 3, 8375);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'homePageLogoTest')
 data.setCell(6, 2, 'com.actitime.qa.testcases.HomePageTest')
-data.setCell(6, 3, 7553);
+data.setCell(6, 3, 7003);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'LoginTestInvalid')
 data.setCell(7, 2, 'com.actitime.qa.testcases.LogonPageTest')
-data.setCell(7, 3, 5488);
+data.setCell(7, 3, 4309);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'LoginTestInvalid')
 data.setCell(8, 2, 'com.actitime.qa.testcases.LogonPageTest')
-data.setCell(8, 3, 4137);
+data.setCell(8, 3, 4003);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'LoginTestInvalid')
 data.setCell(9, 2, 'com.actitime.qa.testcases.LogonPageTest')
-data.setCell(9, 3, 3850);
+data.setCell(9, 3, 3916);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'changeStatus')
 data.setCell(10, 2, 'com.actitime.qa.testcases.ViewUsersTest')
-data.setCell(10, 3, 2138);
+data.setCell(10, 3, 1871);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'changeApprovedAdmin')
+data.setCell(11, 1, 'viewAccountInfo')
 data.setCell(11, 2, 'com.actitime.qa.testcases.ViewUsersTest')
-data.setCell(11, 3, 1754);
+data.setCell(11, 3, 1551);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'viewAccountInfo')
+data.setCell(12, 1, 'changeApprovedAdmin')
 data.setCell(12, 2, 'com.actitime.qa.testcases.ViewUsersTest')
-data.setCell(12, 3, 1586);
+data.setCell(12, 3, 1456);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'loginPageLogoTest')
 data.setCell(13, 2, 'com.actitime.qa.testcases.LogonPageTest')
-data.setCell(13, 3, 300);
+data.setCell(13, 3, 246);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'viewUsersTable')
 data.setCell(14, 2, 'com.actitime.qa.testcases.ViewUsersTest')
-data.setCell(14, 3, 81);
+data.setCell(14, 3, 79);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 36 minutes</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -525,205 +787,207 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">viewUsersTable</span>
-                <span class="method-start">93915 ms</span>
+                <span class="method-start">91959 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">94000 ms</span>
+                <span class="method-start">92042 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.actitime.qa.testcases.TimeTrackTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">seup</span>
-                <span class="method-start">94228 ms</span>
+                <span class="method-start">92165 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">viewTimeTrackTest</span>
-                <span class="method-start">111731 ms</span>
+                <span class="method-start">109466 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">137712 ms</span>
+                <span class="method-start">133235 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.actitime.qa.testcases.LogonPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">seup</span>
-                <span class="method-start">137817 ms</span>
+                <span class="method-start">133333 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginPageLogoTest</span>
-                <span class="method-start">153310 ms</span>
+                <span class="method-start">147979 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">153611 ms</span>
+                <span class="method-start">148225 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.actitime.qa.testcases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">seup</span>
-                <span class="method-start">153699 ms</span>
+                <span class="method-start">148362 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">homePageLogoTest</span>
-                <span class="method-start">169129 ms</span>
+                <span class="method-start">162537 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">176684 ms</span>
+                <span class="method-start">169541 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.actitime.qa.testcases.ViewUsersTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">seup</span>
-                <span class="method-start">176777 ms</span>
+                <span class="method-start">169630 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">changeStatus</span>
-                <span class="method-start">264417 ms</span>
+                <span class="method-start">259564 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">266556 ms</span>
+                <span class="method-start">261437 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">seup</span>
-                <span class="method-start">266694 ms</span>
+                <span class="method-start">261551 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">changeApprovedAdmin</span>
-                <span class="method-start">354836 ms</span>
+                <span class="method-start">345861 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">356590 ms</span>
+                <span class="method-start">347317 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">seup</span>
-                <span class="method-start">356727 ms</span>
+                <span class="method-start">347428 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">viewAccountInfo</span>
-                <span class="method-start">442769 ms</span>
+                <span class="method-start">434630 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">444356 ms</span>
+                <span class="method-start">436181 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.actitime.qa.testcases.TimeTrackTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">seup</span>
-                <span class="method-start">444499 ms</span>
+                <span class="method-start">436291 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">approveTimeTrack</span>
-                <span class="method-start">458715 ms</span>
+                <span class="method-start">454116 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">472005 ms</span>
+                <span class="method-start">2556002 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.actitime.qa.testcases.LogonPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">seup</span>
-                <span class="method-start">472897 ms</span>
+                <span class="method-start">2557044 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginTestInvalid(admin, amod12)</span>
-                <span class="method-start">486821 ms</span>
+                <span class="method-start">2578012 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">490672 ms</span>
+                <span class="method-start">2581928 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">seup</span>
-                <span class="method-start">490762 ms</span>
+                <span class="method-start">2582014 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginTestInvalid(pathi123, manager)</span>
-                <span class="method-start">502347 ms</span>
+                <span class="method-start">2596488 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">507838 ms</span>
+                <span class="method-start">2600491 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">seup</span>
-                <span class="method-start">507938 ms</span>
+                <span class="method-start">2600576 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginTestInvalid(lakshman, hulzi14)</span>
-                <span class="method-start">523038 ms</span>
+                <span class="method-start">2614665 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">527176 ms</span>
+                <span class="method-start">2618976 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">seup</span>
-                <span class="method-start">527366 ms</span>
+                <span class="method-start">2619144 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginTest(admin, manager)</span>
-                <span class="method-start">542924 ms</span>
+                <span class="method-start">2635268 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">553079 ms</span>
+                <span class="method-start">2643786 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">seup</span>
-                <span class="method-start">553173 ms</span>
+                <span class="method-start">2643873 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginTest(trainee, trainee)</span>
-                <span class="method-start">566627 ms</span>
+                <span class="method-start">2658899 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">576863 ms</span>
+                <span class="method-start">2667275 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.actitime.qa.testcases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">seup</span>
-                <span class="method-start">576952 ms</span>
+                <span class="method-start">2667366 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">homePageTaskLinkTest</span>
-                <span class="method-start">592987 ms</span>
+                <span class="method-start">2684241 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">606793 ms</span>
+                <span class="method-start">2697069 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.actitime.qa.testcases.TimeTrackTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">seup</span>
-                <span class="method-start">606889 ms</span>
+                <span class="method-start">2697158 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">rejectTimeTrack</span>
-                <span class="method-start">622819 ms</span>
+                <span class="method-start">2713295 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">639782 ms</span>
+                <span class="method-start">2726816 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

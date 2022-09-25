@@ -1,17 +1,21 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name = "UCSC Test Automation Demo">
+<suite name = "Actitime Test Automation">
 
 
 <listeners>
 		<listener class-name="com.actitime.qa.extentreportlistener.ExtentReporterNG" />
 	</listeners>
 
-   <test name = "UCSC Test Automation Demo Testcases">
+   <test name = "Actitime Testcases">
       <classes>
          <class name = "com.actitime.qa.testcases.HomePageTest" />
          <class name = "com.actitime.qa.testcases.LogonPageTest" />
+         <class name = "com.actitime.qa.testcases.TimeTrackTest" />
+         <class name = "com.actitime.qa.testcases.ViewLeaves" />
+         <class name = "com.actitime.qa.testcases.ViewUsersTest" />
+         
       </classes>
    </test>
 

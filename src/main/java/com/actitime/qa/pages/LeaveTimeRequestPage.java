@@ -55,7 +55,7 @@ public class LeaveTimeRequestPage extends TestBase  {
 		List<WebElement> checkboxes = driver.findElements(By.className("applicableLabel"));
 		checkboxes.get(0).click();
 		approveBtn.click();
-		Thread.sleep(1000);
+		Thread.sleep(3000);
         Assert.assertEquals(status.getText(),"Approved");
     }
 	
