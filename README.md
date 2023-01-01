@@ -21,13 +21,21 @@ TestNG & Maven Project Structure
 
 3. Create the corresponding packages for -- Scripting
 
-a. Page Layer : Creating and storing the test object description using Page Factory – Framework
-b. Test Layer : Multiple test cases using TestNG annotations – Framework
-c. Test Base : Prerequisite of initializing the drivers, properties, etc. – Framework
-d. Configuration files : to store environment variables in .properties file like, URL,
-Default username and passwords, browser instances etc. – Framework
-e. Test data files : Excels, My SQL DB, Property file
-f. Utilities : to store screenshots, generic functions, common utilities, emails etc.
-g. Reports using HTML, XML, Extent Reports etc.- Framework
+            a. Page Layer : Creating and storing the test object description using Page Factory – Framework
+
+            b. Test Layer : Multiple test cases using TestNG annotations – Framework
+
+            c. Test Base : Prerequisite of initializing the drivers, properties, etc. – Framework
+
+            d. Configuration files : to store environment variables in .properties file like, URL,
+            Default username and passwords, browser instances etc. – Framework
+
+            e. Test data files : Excels, My SQL DB, Property file
+
+            f. Utilities : to store screenshots, generic functions, common utilities, emails etc.
+
+            g. Reports using HTML, XML, Extent Reports etc.- Framework
+
 4. Execute Automation Scripts on Multiple times with capturing screen images of failure test cases by fetching the data from DB , excel, property file.
+
 5. Able to capture all the logs using log4j
